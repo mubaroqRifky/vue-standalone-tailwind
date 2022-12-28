@@ -1,0 +1,53 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import './base.scss';
+
+@import './variables';
+@import './animation';
+@import './button';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13.8px;
+}
+
+.scroll-hidden::-webkit-scrollbar{
+    display: none;
+}
+
+.subheader{
+    @apply text-secondary text-sm md:text-base tracking-widest uppercase;
+}
+
+.header-text{
+    @apply text-primary text-xl md:text-2xl font-black;
+}
+
+.wrapper{
+    @apply w-full m-auto max-w-6xl;
+}
+
+.container {
+    @apply w-full m-auto max-w-5xl;
+}
+
+.router-link-active{
+    @apply font-bold text-primary ;
+    
+    &.mobile{
+        background: white
+    }
+}
+
+.width-constraint{
+    @apply m-auto;
+    max-width: 2000px;
+}
+
+.card-news-container{
+    @apply w-48 shadow-md p-2 m-2 rounded-md;
+}
